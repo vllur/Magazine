@@ -1,0 +1,44 @@
+body{
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 2em 1em;
+  max-width: 600px;
+  min-height: calc(100vh - 4em);
+
+  background: $background;
+  color: $paragraph;
+  font: $font-paragraph;
+  font-weight: 300;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font: $font-header;
+  font-weight: 700;
+  font-size: 120%;
+
+  margin: 1.5em 0 0;
+  color: $headline;
+}
+
+a{
+  text-decoration: none;
+
+  &, &:visited{
+    color: $color-link;
+  }
+
+  &:hover{
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+
+  &:active{
+    color: $color-link-active;
+  }
+}

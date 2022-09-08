@@ -1,0 +1,16 @@
+// Fonts
+$font-header:  20px/1.4 'Philosopher', sans;
+$font-paragraph: 20px/1.4 'Rubik', sans;
+$font-mono: 90%/1.5 'IBM Plex Mono', monospace;
+
+// Colors
+$background: #232946;
+$headline: #fffffe;
+$paragraph: #b8c1ec;
+$button: #eebbc3;
+$button-text: #232946;
+
+// Colors: Links
+$color-link: darken($button, 8%);
+$color-link-hover: $color-link;
+$color-link-active: darken($color-link-hover, 5%);
