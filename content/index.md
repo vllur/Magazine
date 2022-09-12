@@ -6,15 +6,9 @@ permalink: /
 
 <nav>
   <ul>
-{%- assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" -%}
-{%- for year in postsByYear -%}
+{%- for post in site.posts -%}
     <li>
-      <h2>{{- year.name -}}</h2>
-        <ul>
-        {%- for post in year.items -%}
-          <li><a href="{{- post.url | relative_url -}}">{{- post.title -}}</a></li>
-        {%- endfor -%}
-        </ul>
+      <h2><a href="{{- post.url | relative_url -}}">{{- post.title -}}</a></h2>
     </li>
 {%- endfor -%}
   </ul>

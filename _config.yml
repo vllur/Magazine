@@ -35,6 +35,21 @@ collections:
 # Appears in header.
 author: "vllur"
 
+# Footer. Available icons: link, youtube, twitter, facebook, linkedin, instagram.
+footer_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ipsum orci, at imperdiet arcu tristique vel. Fusce mollis nibh eget sem pretium, quis auctor justo fermentum. Mauris non risus id sem pulvinar sodales.
+footer_socials:
+  -
+    link: "/"
+    icon: "facebook"
+  -
+    link: "."
+    icon: "twitter"
+  -
+    link: "/"
+    icon: "instagram"
+  -
+    link: "/"
+    icon: "linkedin"
 
 #----------------------------------------
 # JEKYLL SETTINGS

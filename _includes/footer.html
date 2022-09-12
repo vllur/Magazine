@@ -1,3 +1,24 @@
-<header>
-  
-</header>
+<footer>
+  <div>
+    <section>
+      <h3>Latest posts</h3>
+      <ul>
+        {%- for post in site.posts limit:2 -%}
+          <li>
+            <h2><a href="{{- post.url | relative_url -}}">{{- post.title -}}</a></h2>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </section>
+    <section>
+      <h3>{{ site.title }}</h3>
+      <p>{{ site.footer_description }}</p>
+      <ul class="footer-list-socials">
+        {%- for entry in site.footer_socials -%}
+          <li><a class="icon-{{- entry.icon -}}" href="{{- entry.link -}}"></a></li>
+        {%- endfor -%}
+      </ul>
+    </section>
+  </div>
+  <p>{{ 'now' | date: "%Y" }} &copy; <a href="{{ '/' | relative_url }}">{{ site.title }}</a>. Theme by <a href="https://vllur.github.io/" target="_blank">vllur</a>.</p>
+</footer>

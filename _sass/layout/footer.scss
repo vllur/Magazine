@@ -1,0 +1,27 @@
+footer{
+    margin-top: auto;
+
+    & > p{
+        text-align: center;
+    }
+
+    & div{
+        display: flex;
+
+        & section{
+            width: 50%; 
+
+            & .footer-list-socials{
+                display: flex;
+                list-style: none;
+                padding: 0;
+                
+                & li{
+                    font-size: 150%;
+                    margin-right: 0.5em;
+                    text-shadow: 3px 3px 2px darken($background, 15%);
+                }
+            }
+        }
+    }
+}
