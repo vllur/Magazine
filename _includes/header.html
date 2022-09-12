@@ -1,3 +1,9 @@
 <header>
-  
+  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  <ul>
+    <li><a href="{{- '/'  | relative_url -}}">Home</a></li>
+    <li><a href="{{- '/about'  | relative_url -}}">About</a></li>
+    <li><a href="{{- '/contact'  | relative_url -}}">Contact</a></li>
+    <li><a href="#"><div class="icon-search"></div></a></li>
+  </ul>
 </header>
