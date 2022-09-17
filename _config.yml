@@ -2,10 +2,10 @@
 # GENERAL SETTINGS
 #----------------------------------------
 
-# Site title, appears in the browser tab.
+# Site title, appears in the browser tab
 title: "Magazine"
 
-# Site description in search engine.
+# Site description in search engine
 description: "Flashy Jekyll blog theme"
 
 # Language settings for html and seo
@@ -15,7 +15,7 @@ iso-lang: "en"
 # Production url.
 url: "https://vllur.github.io/Magazine"
 
-# Part after .com, etc. use / if none.
+# Part after .com, etc. use / if none
 baseurl: /Magazine
 
 
@@ -26,23 +26,24 @@ baseurl: /Magazine
 # Posts, drafts and other collections in '_content' directory
 collections_dir: content
 
-# Projects collection
+# Collections
 collections:
   img:
     output: true
-    permalink: /:collection/:name
+    permaling: /:collection/:name
 
-# Appears in header.
-author: "vllur"
+# Index
+index_header: "Hi, My Name Is John Doe"
 
-# Footer. Available icons: link, youtube, twitter, facebook, linkedin, instagram.
+# Footer
+# Available icons: link, youtube, twitter, facebook, linkedin, instagram
 footer_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ipsum orci, at imperdiet arcu tristique vel. Fusce mollis nibh eget sem pretium, quis auctor justo fermentum. Mauris non risus id sem pulvinar sodales.
 footer_socials:
   -
     link: "/"
     icon: "facebook"
   -
-    link: "."
+    link: "/"
     icon: "twitter"
   -
     link: "/"
@@ -55,11 +56,7 @@ footer_socials:
 # JEKYLL SETTINGS
 #----------------------------------------
 
-# Takes files from root folder, generates site into ./_site.
-source: .
-destination: ./_site
-
-# Default variables for pages. Are in use if not overwritten.
+# Default variables for pages. Are in use if not overwritten
 defaults:
   -
     scope:
@@ -67,13 +64,24 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: "vllur"
+      img: "https://placekitten.com/300/300"
+      tag: Post
 
-# Excluding dev gem builds from website.
+# Takes files from root folder, generates site into ./_site
+source: .
+destination: ./_site
+
+paginate: 4
+paginate_path: "page/:num/"
+
+# Excluding dev gem builds from website
 exclude: [vendor]
 
-# Jekyll plugins.
+# Jekyll plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-paginate
   - jekyll-feed
