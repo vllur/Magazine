@@ -1,27 +1,82 @@
 footer{
-    margin-top: auto;
+  margin-top: auto;
 
-    & > p{
-        text-align: center;
-    }
+  & > p{
+    text-align: center;
+  }
 
-    & div{
+  & > div{
+    display: flex;
+
+    & section{
+      width: 50%; 
+
+      & .footer-list-socials{
         display: flex;
+        list-style: none;
+        padding: 0;
 
-        & section{
-            width: 50%; 
+        & li{
+          font-size: 150%;
+          margin-right: 0.5em;
+          text-shadow: 3px 3px 2px $drop-shadow;
+          
+          & a{
+            color: $headline;
 
-            & .footer-list-socials{
-                display: flex;
-                list-style: none;
-                padding: 0;
-                
-                & li{
-                    font-size: 150%;
-                    margin-right: 0.5em;
-                    text-shadow: 3px 3px 2px darken($background, 15%);
-                }
+            &:hover{
+              color: $color-link;
+              transition: all 0.2s ease 0s;
             }
+          }
         }
+      }
+
+      & .footer-list-posts{
+        list-style: none;
+        padding: 0;
+
+        & li a{
+          display: flex;
+          margin-bottom: 1em;
+
+          &:hover{
+            text-decoration: none;
+            margin-left: 0.25em;
+            transition: all 0.3s ease 0s;
+          }
+
+          & img{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 15px;
+            box-shadow: 3px 3px 2px $drop-shadow;
+            margin-right: 0.5em;
+          }
+
+          & > div{
+            display: flex;
+            flex-direction: column;
+
+            & aside{
+              font-size: 80%;
+
+              &:first-of-type{
+                padding: 0 0.2em;
+                border-radius: 5px;
+                color: $drop-shadow;
+                background: $color-link;
+                width: fit-content;
+                box-shadow: 3px 3px 2px $drop-shadow;
+              }
+            }
+
+            & h2{
+              margin-top: auto;
+            }
+          }
+        }
+      }
     }
+  }
 }

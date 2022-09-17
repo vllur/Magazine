@@ -2,10 +2,21 @@
   <div>
     <section>
       <h3>Latest posts</h3>
-      <ul>
+      <ul class="footer-list-posts">
         {%- for post in site.posts limit:2 -%}
           <li>
-            <h2><a href="{{- post.url | relative_url -}}">{{- post.title -}}</a></h2>
+            <a href="{{- post.url | relative_url -}}">
+              <img src="{{- post.img -}}">
+              <div>
+                <aside>{{- post.tag -}}</aside>
+                <h2>{{- post.title -}}</h2>
+                {% if post.author %}
+                <aside>{{ post.author }} &bull; {{ post.date | date_to_string }}</aside>
+                {% else %}
+                <aside>{{ post.date | date_to_string }}</aside>
+                {% endif %}
+              </div>
+            </a>
           </li>
         {%- endfor -%}
       </ul>
