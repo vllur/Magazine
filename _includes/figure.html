@@ -1,6 +1,13 @@
 <figure>
-  <a href="{{- include.src | prepend: 'img/' | relative_url  -}}">
+  {% assign http_check = include.src | truncate: 7, "" %}
+  {% if http_check == "http://" or http_check == "https:/" %}
+  <a href="{{- include.src -}}">
+    <img src="{{- include.src -}}" alt="{{ include.alt }}" title="{{ include.title }}">
+  </a>
+  {% else %}
+  <a href="{{- include.src | prepend: 'img/' | relative_url -}}">
     <img src="{{- include.src | prepend: 'img/' | relative_url  -}}" alt="{{ include.alt }}" title="{{ include.title }}">
   </a>
+  {% endif %}
   <figcaption>{{ include.figcaption }}</figcaption>
 </figure>

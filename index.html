@@ -1,0 +1,41 @@
+---
+layout: page
+title: Home
+---
+
+<h1 class="index-title">{{- site.index_header -}}</h1>
+
+<section>
+  <ul class="pagination-list">
+{%- for post in paginator.posts -%}
+    <li>
+      <article class="pagination-post">
+        <a href="{{- post.url | relative_url -}}" style="background: rgba(0, 0, 0, 0.6) url('{{- post.img -}}')">
+          <aside>{{- post.tag -}}</aside>
+          <h2>{{- post.title -}}</h2>
+          <aside>{{ post.author }} &bull; {{ post.date | date_to_string }}</aside>
+        </a>
+      </article>
+    </li>
+{%- endfor -%}
+  </ul>
+{% if paginator.total_pages > 1 %}
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="icon-left"></a>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+    <span>{{ page }}</span>
+      {% elsif page == 1 %}
+    <a href="{{ '/' | relative_url }}">{{ page }}</a>
+      {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="icon-right"></a>
+    {% endif %}
+  </nav>
+{% endif %}
+</section>
