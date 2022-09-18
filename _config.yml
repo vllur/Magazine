@@ -6,7 +6,7 @@
 title: "Magazine"
 
 # Site description in search engine
-description: "Flashy Jekyll blog theme"
+description: "Jekyll theme for every blogger."
 
 # Language settings for html and seo
 lang: "en_GB"
@@ -15,7 +15,7 @@ iso-lang: "en"
 # Production url.
 url: "https://vllur.github.io/Magazine"
 
-# Part after .com, etc. use / if none
+# Part after .com, etc. Use / if none
 baseurl: /Magazine
 
 
@@ -37,7 +37,7 @@ index_header: "Hi, My Name Is John Doe"
 
 # Footer
 # Available icons: link, youtube, twitter, facebook, linkedin, instagram
-footer_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ipsum orci, at imperdiet arcu tristique vel. Fusce mollis nibh eget sem pretium, quis auctor justo fermentum. Mauris non risus id sem pulvinar sodales.
+footer_description: Magazine is a theme for every blogger. By focusing on your original content, it makes sure to present your work in a modern way.
 footer_socials:
   -
     link: "/"
