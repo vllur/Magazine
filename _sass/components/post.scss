@@ -1,19 +1,18 @@
-.post{
-  &-header{
+.post {
+  &-header {
     font-size: 2.5em;
     margin-top: 4rem;
   }
 
-  &-data{
+  &-data {
     display: flex;
     margin-bottom: 2rem;
   }
 
-  &-image{
+  &-image {
     display: block;
     border-radius: 15px;
     box-shadow: 4px 4px 2px $drop-shadow;
     margin: 1em auto;
   }
 }
-  

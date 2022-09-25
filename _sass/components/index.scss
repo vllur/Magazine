@@ -1,21 +1,22 @@
-.index-title{
+.index-title {
   font-size: 4em;
   text-align: center;
   margin: 4rem 2rem 1rem 2rem;
 }
 
-.index-description{
+.index-description {
   font-size: 1.2em;
   text-align: center;
   margin: 0 15% 5rem 15%;
 }
 
-.pagination{
+.pagination {
   display: flex;
   justify-content: center;
   margin: 1em 0;
 
-  & a, & span{
+  & a,
+  & span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,39 +25,40 @@
     margin: 0 0.2em;
   }
 
-  & a:not([class^="icon-"]), & span{
+  & a:not([class^="icon-"]),
+  & span {
     font-weight: bold;
     border-radius: 50%;
     margin: 0 0.4em;
   }
 
-  & a:not([class^="icon-"]){
+  & a:not([class^="icon-"]) {
     background-color: $color-link;
     color: $button-text;
 
-    &:hover{
+    &:hover {
       background-color: lighten($color-link, 5%);
       text-decoration: none;
       transition: all 0.3s ease 0s;
     }
   }
 
-  & span{
+  & span {
     background-color: $background;
     color: $paragraph;
   }
 
-  & a[class^="icon-"]{
+  & a[class^="icon-"] {
     text-shadow: 1px 1px 2px $background;
 
-    &:hover{
+    &:hover {
       color: lighten($color-link, 5%);
       text-decoration: none;
       transition: all 0.3s ease 0s;
     }
   }
 
-  &-list{
+  &-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -66,62 +68,65 @@
     list-style: none;
     padding: 0;
 
-    & li{
-      &:first-of-type{
+    & li {
+      &:first-of-type {
         width: 100%;
 
-        & article a{
+        & article a {
           height: 20em;
 
-          & h2{
+          & h2 {
             font-size: 2.5em;
           }
         }
       }
+
       width: 33.3%;
     }
   }
 
-  &-post{
+  &-post {
     margin: 0.5em;
 
-      & a{
-        background-color: rgba(0, 0, 0, 0.6);
-        background-blend-mode: darken;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        overflow: hidden;
-        min-height: 14em;
-        box-shadow: 4px 4px 2px $drop-shadow;
+    & a {
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: darken;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      overflow: hidden;
+      min-height: 14em;
+      box-shadow: 4px 4px 2px $drop-shadow;
 
-        &:hover{
-          text-decoration: none;
-          transform: scale(1.02);
-          transition: all 0.3s ease 0s;
-        }
-        & h2{
-          font-size: 160%;
-          margin: auto 1rem -0.5rem 1rem;
-        }
-        & aside{
-          &:first-child{
-            padding: 0 0.2em;
-            border-radius: 5px;
-            color: $drop-shadow;
-            background: $color-link;
-            width: fit-content;
-            box-shadow: 3px 3px 2px $drop-shadow;
-            text-shadow: none;
-          }
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.02);
+        transition: all 0.3s ease 0s;
+      }
 
-          font-size: 80%;
-          color: $headline;
-          text-shadow: 1px 1px 2px $background;
-          margin: 1rem;
+      & h2 {
+        font-size: 160%;
+        margin: auto 1rem -0.5rem 1rem;
+      }
+
+      & aside {
+        font-size: 80%;
+        color: $headline;
+        text-shadow: 1px 1px 2px $background;
+        margin: 1rem;
+
+        &:first-child {
+          padding: 0 0.2em;
+          border-radius: 5px;
+          color: $drop-shadow;
+          background: $color-link;
+          width: fit-content;
+          box-shadow: 3px 3px 2px $drop-shadow;
+          text-shadow: none;
         }
       }
+    }
   }
 }

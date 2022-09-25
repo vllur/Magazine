@@ -13,7 +13,7 @@ layout: default
         <a href="{{- post.url | relative_url -}}" style="background-image: url('{{- post.img -}}')">
           <aside>{{- post.tag -}}</aside>
           <h2>{{- post.title -}}</h2>
-          <aside>{{ post.author }} &bull; {{ post.date | date_to_string }}</aside>
+          <aside>{{- post.author -}} &bull; {{- post.date | date_to_string -}}</aside>
         </a>
       </article>
     </li>
@@ -22,19 +22,19 @@ layout: default
 {% if paginator.total_pages > 1 %}
   <nav class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="icon-left"></a>
+    <a href="{{- paginator.previous_page_path | relative_url -}}" class="icon-left"></a>
     {% endif %}
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
     <span>{{ page }}</span>
       {% elsif page == 1 %}
-    <a href="{{ '/' | relative_url }}">{{ page }}</a>
+    <a href="{{- '/' | relative_url -}}">{{ page }}</a>
       {% else %}
-    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    <a href="{{- site.paginate_path | relative_url | replace: ':num', page -}}">{{ page }}</a>
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="icon-right"></a>
+    <a href="{{- paginator.next_page_path | relative_url -}}" class="icon-right"></a>
     {% endif %}
   </nav>
 {% endif %}
