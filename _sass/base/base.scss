@@ -7,7 +7,8 @@ body{
   max-width: 1300px;
   min-height: 100vh;
 
-  background: $background;
+  background-color: $background;
+  background: $background-gradient;
   color: $paragraph;
   font: $font-paragraph;
   font-weight: 300;

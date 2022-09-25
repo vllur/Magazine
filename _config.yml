@@ -33,7 +33,8 @@ collections:
     permaling: /:collection/:name
 
 # Index
-index_header: "Hi, My Name Is John Doe"
+index_header: "Blogging with Jekyll"
+index_description: "Magazine is a theme for every blogger. By focusing on your original content, it makes sure to present your work in a modern way."
 
 # Footer
 # Available icons: link, youtube, twitter, facebook, linkedin, instagram
