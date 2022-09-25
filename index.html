@@ -10,7 +10,7 @@ title: Home
 {%- for post in paginator.posts -%}
     <li>
       <article class="pagination-post">
-        <a href="{{- post.url | relative_url -}}" style="background: rgba(0, 0, 0, 0.6) url('{{- post.img -}}')">
+        <a href="{{- post.url | relative_url -}}" style="background-image: url('{{- post.img -}}')">
           <aside>{{- post.tag -}}</aside>
           <h2>{{- post.title -}}</h2>
           <aside>{{ post.author }} &bull; {{ post.date | date_to_string }}</aside>
