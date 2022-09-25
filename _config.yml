@@ -66,7 +66,7 @@ defaults:
     values:
       layout: "post"
       author: "vllur"
-      img: "https://placekitten.com/1024/1024"
+      img: "https://placekitten.com/990/540"
       tag: Post
 
 # Takes files from root folder, generates site into ./_site

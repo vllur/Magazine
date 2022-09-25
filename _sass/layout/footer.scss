@@ -3,6 +3,7 @@ footer{
 
   & > p{
     text-align: center;
+    margin: 2em 0;
   }
 
   & > div{
@@ -46,12 +47,15 @@ footer{
             transition: all 0.3s ease 0s;
           }
 
-          & img{
+          & .footer-image{
             width: 10rem;
+            min-width: 10rem;
             height: 10rem;
             border-radius: 15px;
             box-shadow: 3px 3px 2px $drop-shadow;
             margin-right: 0.5em;
+            background-position: center;
+            background-size: 300px;
           }
 
           & > div{
