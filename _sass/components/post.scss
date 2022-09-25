@@ -10,9 +10,10 @@
   }
 
   &-image{
+    display: block;
     border-radius: 15px;
     box-shadow: 4px 4px 2px $drop-shadow;
-    margin: 0.5em 0;
+    margin: 1em auto;
   }
 }
   
