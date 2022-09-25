@@ -1,4 +1,8 @@
+{% if include.centered %}
+<figure style="margin: auto;">
+{% else %}
 <figure>
+{% endif %}
   {% assign http_check = include.src | truncate: 7, "" %}
   {% if http_check == "http://" or http_check == "https:/" %}
   <a href="{{- include.src -}}">

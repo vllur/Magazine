@@ -16,7 +16,8 @@ Here is a compilation of websites to help you pick the perfect image for your po
 src="https://placekitten.com/400/200"
 alt=""
 title=""
-figcaption="A kitten" %}
+centered=true
+figcaption="A kitten, centered" %}
 
 ## Stock photos
 - [pexels.com](https://pexels.com)
