@@ -54,8 +54,9 @@ footer{
             border-radius: 15px;
             box-shadow: 3px 3px 2px $drop-shadow;
             margin-right: 0.5em;
+            background-repeat: no-repeat;
             background-position: center;
-            background-size: 300px;
+            background-size: cover;
           }
 
           & > div{
