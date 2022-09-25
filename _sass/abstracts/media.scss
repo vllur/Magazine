@@ -1,0 +1,27 @@
+@media only screen and (max-width: 900px){
+  body{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .pagination-list li{
+    width: 100%;
+
+    &:first-of-type article a{
+      height: initial;
+
+      & h2{
+        font-size: 160%;
+      }
+    }
+  }
+
+  footer > div{
+    flex-direction: column;
+
+    & section{
+      width: 100%;
+    }
+  }
+}
