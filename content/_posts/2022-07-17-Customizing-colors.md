@@ -1,6 +1,7 @@
 ---
 title: Customizing colors
 published: true
+img: /Magazine/img/2.jpeg
 ---
 
 To customize this theme's colors, open `_sass/abstracts/variables.scss` file and change hex values to your liking.

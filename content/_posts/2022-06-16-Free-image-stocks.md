@@ -1,6 +1,7 @@
 ---
 title: Free image stocks
 published: true
+img: /Magazine/img/3.jpeg
 ---
 
 Instead of using markdown's image placing, you may use this theme's wrapper, as demonstrated in this file.

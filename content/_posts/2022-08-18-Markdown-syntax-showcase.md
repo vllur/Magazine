@@ -1,6 +1,7 @@
 ---
 title: Markdown syntax showcase
 published: true
+img: /Magazine/img/1.jpeg
 ---
 
 This post is a demonstration of formatting capabilities of Markdown.
